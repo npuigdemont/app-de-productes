@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App productes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!-- navegador -->
+    <nav class="navbar navbar-light"></nav>
+    <a href="/" class="navbar-brand m-5 h3">
+        App de productes
+    </a>
+
+    <div class="container">
+        <!-- aplicació -->
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Afegeix un producte</h3>
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group m-2">
+                            <input type="text" id="nom" placeholder="Nom del producte" class="form-control">
+                        </div>
+                        <div class="form-group m-2">
+                            <input type="number" step="0.01" id="preu" placeholder="Preu del producte" class="form-control">
+                        </div>
+                        <div class="form-group m-2">
+                            <input type="descripció" id="descripcio" placeholder="Descripció del producte" class="form-control" style="height: 100px">
+                        </div>
+                        <div class="form-group m-2">
+                            <select class="form-select" id="categoria">
+                                <option selected>Tria la categoria</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Guardar" class="btn btn-secondary m-2 btn-block">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="product-list"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
